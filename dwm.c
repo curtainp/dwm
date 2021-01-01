@@ -1759,8 +1759,8 @@ run(void)
 
 void
 runAutostart(void) {
-	system("cd ~/scripts; ./autostart_blocking.sh");
-	system("cd ~/scripts; ./autostart.sh &");
+	//system("cd ~/.dwm/scripts; ./autostart_blocking.sh");
+	system("cd ~/.dwm/scripts; ./autostart.sh &");
 }
 
 void
