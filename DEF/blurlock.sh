@@ -29,4 +29,4 @@ i3lock \
     --verif-color ffffffff \
     --wrong-color ffffffff \
     --modif-pos -50:-50
-xdotool mousemove_relative 1 1 # 该命令用于解决自动锁屏后未展示锁屏界面的问题(移动一下鼠标)
+# xdotool mousemove_relative 1 1 # 该命令用于解决自动锁屏后未展示锁屏界面的问题(移动一下鼠标)
