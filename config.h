@@ -146,8 +146,8 @@ static Key keys[] = {
     { MODKEY,              XK_u,            toggleborder,     {0} },                     /* super u            |  开启/关闭 边框 */
     { MODKEY,              XK_e,            incnmaster,       {.i = +1} },               /* super e            |  改变主工作区窗口数量 (1 2中切换) */
 
-    { MODKEY,              XK_b,            focusmon,         {.i = +1} },               /* super b            |  光标移动到另一个显示器 */
-    { MODKEY|ShiftMask,    XK_b,            tagmon,           {.i = +1} },               /* super shift b      |  将聚焦窗口移动到另一个显示器 */
+    /* { MODKEY,              XK_b,            focusmon,         {.i = +1} },               /\* super b            |  光标移动到另一个显示器 *\/ */
+    /* { MODKEY|ShiftMask,    XK_b,            tagmon,           {.i = +1} },               /\* super shift b      |  将聚焦窗口移动到另一个显示器 *\/ */
 
     { MODKEY,              XK_q,            killclient,       {0} },                     /* super q            |  关闭窗口 */
     { MODKEY|ControlMask,  XK_q,            forcekillclient,  {0} },                     /* super ctrl q       |  强制关闭窗口(处理某些情况下无法销毁的窗口) */
@@ -185,6 +185,7 @@ static Key keys[] = {
     { MODKEY,              XK_minus,  spawn, SHCMD("st -c FG") },                                               /* super +          | 打开全局st终端         */
     { MODKEY,              XK_space,  spawn, SHCMD("st -c float") },                                            /* super space      | 打开浮动st终端         */
     { MODKEY,              XK_d,      spawn, SHCMD("dmenu_run") },                                              /* super d          | rofi run         */
+    { MODKEY,              XK_b,      spawn, SHCMD("dmenu_bookmark") },                                              /* super d          | rofi run         */
     /* { MODKEY,              XK_p,      spawn, SHCMD("$DWM/DEF/rofi.sh") },                                              /\* super p          | rofi menu         *\/ */
     { MODKEY,              XK_n,      spawn, SHCMD("$DWM/DEF/blurlock.sh") },                                   /* super n          | 锁定屏幕               */
     { MODKEY|ShiftMask,    XK_Up,     spawn, SHCMD("$DWM/DEF/set_vol.sh up") },                                 /* super shift up   | 音量加                 */
