@@ -184,7 +184,9 @@ static Key keys[] = {
     { MODKEY,              XK_Return, spawn, SHCMD("st") },                                                     /* super enter      | 打开st终端             */
     { MODKEY,              XK_minus,  spawn, SHCMD("st -c FG") },                                               /* super +          | 打开全局st终端         */
     { MODKEY,              XK_space,  spawn, SHCMD("st -c float") },                                            /* super space      | 打开浮动st终端         */
-    { MODKEY,              XK_d,      spawn, SHCMD("dmenu_run") },                                              /* super d          | rofi run         */
+    { MODKEY,              XK_d,      spawn, SHCMD("dmenu_run_history") },                                              /* super d          | rofi run         */
+    { MODKEY,              XK_c,      spawn, SHCMD("dmenu_cliphist add") },                                              /* super d          | rofi run         */
+    { MODKEY,              XK_v,      spawn, SHCMD("dmenu_cliphist sel") },                                              /* super d          | rofi run         */
     { MODKEY,              XK_b,      spawn, SHCMD("dmenu_bookmark") },                                              /* super d          | rofi run         */
     /* { MODKEY,              XK_p,      spawn, SHCMD("$DWM/DEF/rofi.sh") },                                              /\* super p          | rofi menu         *\/ */
     { MODKEY,              XK_n,      spawn, SHCMD("$DWM/DEF/blurlock.sh") },                                   /* super n          | 锁定屏幕               */
@@ -199,9 +201,13 @@ static Key keys[] = {
     TAGKEYS(XK_1, 0, 0)
     TAGKEYS(XK_2, 1, 0)
     TAGKEYS(XK_3, 2, 0)
-    TAGKEYS(XK_9, 3, "obs")
-    TAGKEYS(XK_c, 4, "chromium")
-    TAGKEYS(XK_m, 5, "rmpc")
+    TAGKEYS(XK_4, 3, 0)
+    TAGKEYS(XK_5, 4, 0)
+    TAGKEYS(XK_6, 5, 0)
+    TAGKEYS(XK_7, 6, 0)
+    /* TAGKEYS(XK_9, 3, "obs") */
+    /* TAGKEYS(XK_c, 4, "chromium") */
+    /* TAGKEYS(XK_m, 5, "rmpc") */
 };
 
 static Button buttons[] = {
